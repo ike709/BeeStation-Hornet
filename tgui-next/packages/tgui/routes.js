@@ -30,6 +30,7 @@ import { PortableGenerator } from './interfaces/PortableGenerator';
 import { ShuttleManipulator } from './interfaces/ShuttleManipulator';
 import { SmartVend } from './interfaces/SmartVend';
 import { ThermoMachine } from './interfaces/ThermoMachine';
+import { TurboLift } from './interfaces/TurboLift';
 import { VaultController } from './interfaces/VaultController';
 import { Wires } from './interfaces/Wires';
 
@@ -161,6 +162,10 @@ const ROUTES = {
   thermomachine: {
     component: () => ThermoMachine,
     scrollable: false,
+  },
+  turbolift: {
+    component: () => TurboLift,
+    scrollable: true,
   },
   vault_controller: {
     component: () => VaultController,
